@@ -1,0 +1,57 @@
+NOME: Mariana Araujo, 20242158060025
+
+
+
+
+cd curso-git-ead-ifrn
+
+mkdir un2-branchs
+
+cd un2-branchs
+
+git clone https://gitlab.com/mizael.cortez/curso-branchs-ifrn-ead .
+
+echo v1 do arquivo no main > texto.txt
+
+cat texto.txt
+
+git add texto.txt
+
+git commit -m Adição de texto no arquivo texto.txt
+
+git log --oneline
+
+git checkout -b feature-1
+
+echo v2 do arquivo na branch feature-1 > texto.txt
+
+git add texto.txt
+
+git commit -m Modifica o arquivo texto.txt na branch feature-1
+
+git log --oneline
+
+git checkout main
+
+echo v3 do arquivo na branch main > texto.txt
+
+git add texto.txt
+
+git commit -m Modifica o arquivo texto.txt na branch main
+
+git log --oneline
+
+git merge feature-1
+
+nano texto.txt
+
+cat texto.txt
+
+git add texto.txt
+
+git commit -m Resolução do conflito entre main e feature-1 no texto.txt
+
+git log --oneline
+
+git checkout -b add-comandos
+
