@@ -1,1 +1,1 @@
-v3 do arquivo na branch main
+versão depois da correção do conflito no merge.
